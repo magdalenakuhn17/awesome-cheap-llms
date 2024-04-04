@@ -1,16 +1,15 @@
 <div align="center">
   <h1>awesome-cheap-llms</h1>
   <p align="center">
-    :yellow_heart: <a href="https://www.canva.com/design/DAGAzJWIcnw/FIWWonF55d9FARA57xT8vg/edit?utm_content=DAGAzJWIcnw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton>Costs of RAG based applications</a> • 
+    :yellow_heart: <a href="https://www.canva.com/design/DAGAzJWIcnw/FIWWonF55d9FARA57xT8vg/edit?utm_content=DAGAzJWIcnw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Costs of RAG based applications</a> • 
     :blue_heart: <a href="https://www.linkedin.com/in/joannastoffregen/">Follow Joanna on LinkedIn</a> • 
     :blue_heart: <a href="https://www.linkedin.com/in/magdalenakuhn/">Follow Magdalena on LinkedIn</a> • 
     :white_heart: <a href="https://github.com/DataTalksClub/llm-zoomcamp">Sign up to DataTalksClub LLM Zoomcamp</a> • 
   </p>
 </div>
 <br/>
-Cost reduction tools and techniques for LLM based systems
-
 <p align="center">
+  Cost reduction tools and techniques for LLM based systems
   <img src="images/Screenshot%202024-04-04%20at%2007.41.00.png" alt="Alt text" title="Expectation vs. Reality">
 </p>
 
@@ -105,4 +104,6 @@ Make sure one single customer is not able to penetrate your LLM and skyrocket yo
 * We plan to divide the content into subpages to further structure all chapters.
 
 
+<p align="center">
 :1st_place_medal: :2nd_place_medal: :3rd_place_medal:
+</p>

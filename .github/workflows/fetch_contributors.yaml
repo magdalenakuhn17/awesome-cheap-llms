@@ -19,7 +19,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
       - name: Update README with contributors
-        run: python path/to/your_script.py
+        run: python src/fetch_contributors.py
       - name: Commit and push if changed
         run: |
           git config --global user.email "action@github.com"
