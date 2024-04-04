@@ -76,7 +76,8 @@ Add automatic checks to route all incoming user prompts to a suitable model. Fol
 
 ### Tools & frameworks that help with routing
 * Native implementation in Python of your custom logic 
-* **Nemo guardrails** to detect and Route based on intent 
+* **Nemo guardrails** to detect and Route based on intent
+* **Roli.ai** for a code-first, highly configurable LLM router 
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
@@ -86,6 +87,7 @@ If your users tend to send very similar prompts to your LLM system, you can redu
 ### In-depth papers that explain underlying concepts
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Tools & frameworks that help with caching
+* **Roli.ai** has durable, strongly typed cache accessible from the router
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
@@ -105,7 +107,8 @@ Make sure one single customer is not able to penetrate your LLM and skyrocket yo
 * :speaking_head: call-for-contributions :speaking_head: 
 ## 9) :blue_book: During development time 
 * Make sure to not send endless API calls to your LLM during development and manual testing.
-* Make sure to not send automated API calls to your LLM via automated CICD workflows, integration tests etc. 
+* Make sure to not send automated API calls to your LLM via automated CICD workflows, integration tests etc.
+* For CICD workflows, consider using "MockGPT" endpoints using WireMock (free). Example: https://roli-doctorsnotes.wiremockapi.cloud/
 
 # Contributions welcome 
 * We’re happy to review and accept your Pull Request on LLM cost reduction techniques and tools. 
