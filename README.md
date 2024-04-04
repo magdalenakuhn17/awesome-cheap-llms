@@ -106,3 +106,8 @@ Make sure one single customer is not able to penetrate your LLM and skyrocket yo
 
 # Top :1st_place_medal: :2nd_place_medal: :3rd_place_medal: contributors 
 - [magdalenakuhn17](https://github.com/magdalenakuhn17)
+
+
+
+# Top :1st_place_medal: :2nd_place_medal: :3rd_place_medal: contributors 
+- [magdalenakuhn17](https://github.com/magdalenakuhn17)
