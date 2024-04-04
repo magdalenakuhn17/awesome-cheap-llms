@@ -18,7 +18,7 @@ with open("README.md", "r") as file:
     readme_contents = file.read()
 
 # Append the contributors list to the README
-readme_contents += "\n\n# Top 3 contributors\n" + contributors_md
+readme_contents += "\n\n\n# Top :1st_place_medal: :2nd_place_medal: :3rd_place_medal: contributors \n" + contributors_md
 
 # Write the updated contents back to the README
 with open("README.md", "w") as file:
