@@ -1,9 +1,9 @@
 name: Update Contributors List
 
 on:
-  push:
-    branches:
-      - NOREF_adjust_structure
+  workflow_dispatch:
+  schedule:
+    - cron: "0 22 * * *"
 
 jobs:
   update-contributors:
@@ -21,11 +21,18 @@ jobs:
       - name: Update README with contributors
         run: python src/fetch_contributors.py
       - name: Commit and push if changed
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
+          PR_BRANCH="auto-pr-${GITHUB_SHA}"
+          git checkout -b $PR_BRANCH
           git add README.md
           git commit -m "Update contributors list" || exit 0
-          git push
+          git push origin $PR_BRANCH
+          echo "PR_BRANCH=${PR_BRANCH}" >> $GITHUB_ENV
+      - name: Create Pull Request
+        id: create_pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create --title "NOREF_update_list_of_contributors" --body "Fetch latest contributors"
