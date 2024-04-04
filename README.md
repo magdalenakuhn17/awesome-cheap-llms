@@ -22,31 +22,29 @@
 Selecting a suitable model or combination of models builds the foundation of building const-sensible LLM applications.
 
 ### In-depth papers that explain underlying concepts
+* Naveed, Humza, et al. ["A comprehensive overview of large language models."](https://arxiv.org/abs/2307.06435?utm) arXiv preprint arXiv:2307.06435 (2023).
+* Minaee, Shervin, et al. ["Large Language Models: A Survey."](https://arxiv.org/abs/2402.06196) arXiv preprint arXiv:2402.06196 (2024).
 * :speaking_head: call-for-contributions :speaking_head:
-* Large Language Model (LLM) Surveys
-LLMs are evolving at a rapid speed making it hard to keep a good overview. The following paper fill that gap and provide a nice overview of the recent developments and compare the different LLMs.
-1) Naveed, Humza, et al. ["A comprehensive overview of large language models."](https://arxiv.org/abs/2307.06435?utm) arXiv preprint arXiv:2307.06435 (2023).
-2) Minaee, Shervin, et al. ["Large Language Models: A Survey."](https://arxiv.org/abs/2402.06196) arXiv preprint arXiv:2402.06196 (2024).
 ### Tools & frameworks that help with selecting the correct model
 * Hugging face open leaderboard
-* [How to Evaluate, Compare, and Optimize LLM Systems](https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz?utm)
 ### Hands-on blog posts & courses with step by step guide
+* [How to Evaluate, Compare, and Optimize LLM Systems](https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz?utm)
 * :speaking_head: call-for-contributions :speaking_head: 
 
 ## 2) :blue_book: Model size 
 After chosing the suitable model family, you should consider models with fewer parameters and other techniques that reduce model size.
 * Selection of model parameter size 
 * Quantization of models
-* Through a higher degree of model customization, you can try to achieve the same performance as with a bigger model, i.e. through using RAG or fine-tuning.
+* Higher degree of model customization (i.e. through RAG or fine-tuning) can achieve the same performance as a bigger model
+* Distillation 
 
 ### In-depth papers that explain underlying concepts
 * :speaking_head: call-for-contributions :speaking_head:
 
 ### Tools & frameworks that help reducing model size 
-* :speaking_head: call-for-contributions :speaking_head:
 * [LoRA](https://huggingface.co/docs/diffusers/training/lora#lora) and [QLoRA](https://medium.com/@dillipprasad60/qlora-explained-a-deep-dive-into-parametric-efficient-fine-tuning-in-large-language-models-llms-c1a4794b1766) make training large models more efficient
-* Distillation is technique that reduces the model size but is quite compute-intensive
-* Model quantization
+* :speaking_head: call-for-contributions :speaking_head:
+
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
 ## 3) :blue_book: Open source vs. proprietary models
