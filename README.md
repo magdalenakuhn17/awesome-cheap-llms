@@ -102,3 +102,7 @@ Make sure one single customer is not able to penetrate your LLM and skyrocket yo
 * We’re happy to review and accept your Pull Request on LLM cost reduction techniques and tools. 
 * We plan to divide the content into subpages to further structure all chapters.
 <br><br><br><br>
+
+
+# Top :1st_place_medal: :2nd_place_medal: :3rd_place_medal: contributors 
+- [magdalenakuhn17](https://github.com/magdalenakuhn17)
