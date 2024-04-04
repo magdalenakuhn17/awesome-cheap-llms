@@ -3,7 +3,7 @@ name: Update Contributors List
 on:
   push:
     branches:
-      - NOREF_adjust_structure
+      - main
 
 jobs:
   update-contributors:
@@ -21,11 +21,21 @@ jobs:
       - name: Update README with contributors
         run: python src/fetch_contributors.py
       - name: Commit and push if changed
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
+          PR_BRANCH="auto-pr-${GITHUB_SHA}"
+          git checkout -b $PR_BRANCH
           git add README.md
           git commit -m "Update contributors list" || exit 0
-          git push
+          git push origin $PR_BRANCH
+          echo "PR_BRANCH=${PR_BRANCH}" >> $GITHUB_ENV
+      - name: Create Pull Request
+        id: create_pr
+        uses: repo-sync/pull-request@v2
+        with:
+          github_token: ${{ secrets.AUTOMATION_TOKEN }} 
+          pr_title: "Automated changes"
+          pr_body: "Update contributors list"
+          destination_branch: "main"
+          source_branch: "${{ env.PR_BRANCH }}"
