@@ -1,6 +1,7 @@
 name: Update Contributors List
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 22 * * *"
 
@@ -31,5 +32,7 @@ jobs:
           echo "PR_BRANCH=${PR_BRANCH}" >> $GITHUB_ENV
       - name: Create Pull Request
         id: create_pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh pr create --title "NOREF_update_list_of_contributors"
+          gh pr create --title "NOREF_update_list_of_contributors" --body "Fetch latest contributors"
