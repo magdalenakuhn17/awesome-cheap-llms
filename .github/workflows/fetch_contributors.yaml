@@ -3,7 +3,7 @@ name: Update Contributors List
 on:
   push:
     branches:
-      - NOREF_adjust_structure
+      - main
 
 jobs:
   update-contributors:
@@ -22,10 +22,10 @@ jobs:
         run: python src/fetch_contributors.py
       - name: Commit and push if changed
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add README.md
           git commit -m "Update contributors list" || exit 0
-          git push
+          git push --force
