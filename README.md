@@ -6,12 +6,12 @@ Cost reduction tools and techniques for LLM based systems
 </p>
 
 
-* Let’s make sure that your LLM application doesn’t burn a hole in your pocket.
-* Let’s instead make sure your LLM application generates a positive ROI for you, your company and your users.
+:point_right: Let’s make sure that your LLM application doesn’t burn a hole in your pocket.
+:point_right: Let’s instead make sure your LLM application generates a positive ROI for you, your company and your users.
 
 # Tools & frameworks to reduce costs
 
-## Model family and type 
+## 1) Model family and type 
 Selecting a suitable model or combination of models builds the foundation of building const-sensible LLM applications.
 
 ### In-depth papers that explain underlying concepts
@@ -20,7 +20,7 @@ Selecting a suitable model or combination of models builds the foundation of bui
 * Hugging face open leaderboard
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
-## Model size 
+## 2) Model size 
 After chosing the suitable model family, you should consider models with less amount of parameters and other techniques that reduce model size.
 * Selection of model parameter size 
 * Quantization of models
@@ -31,7 +31,7 @@ After chosing the suitable model family, you should consider models with less am
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
-## Open source vs. proprietary models
+## 3) Open source vs. proprietary models
 Consider self-hosting models instead of using proprietary models if you have capable developers in house. Still, have an oversight of Total Cost of Ownership, when benchmarking managed LLMs vs. setting up everything on your own. 
 
 ### In-depth papers that explain underlying concepts
@@ -44,7 +44,7 @@ Consider self-hosting models instead of using proprietary models if you have cap
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
-## Input/Output tokens
+## 4) Input/Output tokens
 A key cost driver is the amount of input token (user prompt + context) and output token you allow for your LLM. Different techniques to reduce the amount of tokens help in saving costs.
 * Compression
 * Summarization
@@ -55,7 +55,7 @@ A key cost driver is the amount of input token (user prompt + context) and outpu
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
-## Prompt and model routing 
+## 5) Prompt and model routing 
 Add automatic checks to route all incoming user prompts to a suitable model. Follow Least-Model-Principle, which means to by default use the simplest possible logic or LM to answer a users question and only route to more complex LMs if necessary (aka. "LLM Cascading"). This can result to answering certain questions with a predefined response, using SLMs for simple questions and LLMs for complex questions. 
 
 ### Tools & frameworks that help with routing
@@ -64,7 +64,7 @@ Add automatic checks to route all incoming user prompts to a suitable model. Fol
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
-## Caching 
+## 6) Caching 
 If your users tend to send very similar prompts to your LLM system, you can reduce costs by using different cachin techniques:
 * :speaking_head: call-for-contributions :speaking_head: 
 ### In-depth papers that explain underlying concepts
@@ -73,21 +73,21 @@ If your users tend to send very similar prompts to your LLM system, you can redu
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
-## Rate limiting 
+## 7) Rate limiting 
 Make sure one single customer is not able to penetrate your LLM and skyrocket your bill. Track amount of prompts per month per user and either hard limit to max amount of prompts or reduce response time when a user is hitting the limit. In addition, detect unnatural/sudden spikes in user requests (similar to DDOS attacks, users/competitors can harm your business by sending tons of requests to your model).
 ### Tools & frameworks that help with rate limiting:
 * Simple tracking logic can be implemented in native Python 
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
-## Cost tracking  
+## 8) Cost tracking  
 "You can't improve what you don't measure" --> Make sure to know where your costs are coming from. Is it super active users? Is it a premium model? etc.
 ### Tools & frameworks that help with cost tracking
 * Simple tracking logic can be implemented in native Python 
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Hands-on blog posts & courses with step by step guide
 * :speaking_head: call-for-contributions :speaking_head: 
-## During development time 
+## 9) During development time 
 * Make sure to not send endless API calls to your LLM during development and manual testing.
 * Make sure to not send automated API calls to your LLM via automated CICD workflows, integration tests etc. 
 
