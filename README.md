@@ -9,7 +9,6 @@
 <br/>
 <p align="center">
   <img src="images/Screenshot%202024-04-04%20at%2007.41.00.png" alt="Alt text" title="Expectation vs. Reality"> <br>
-  Cost reduction tools and techniques for LLM based systems 
 </p>
 
 
@@ -17,6 +16,10 @@
 :point_right: Let’s instead make sure your LLM application generates a positive ROI for you, your company and your users.
 
 # Techniques to reduce costs
+
+<p align="center">
+  <img src="images/overview.png" alt="Alt text" title="Overview"> <br>
+</p>
 
 ## 1) :blue_book: Choose model family and type 
 Selecting a suitable model or combination of models builds the foundation of building const-sensible LLM applications.
