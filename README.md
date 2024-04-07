@@ -53,6 +53,7 @@ After chosing the suitable model family, you should consider models with fewer p
 ### Blog posts & courses
 * [Basics of quantization in ML](https://iq.opengenus.org/basics-of-quantization-in-ml/)
 * [How LLM quantization impacts model quality](https://deci.ai/blog/how-llm-quantization-impacts-model-quality/#:~:text=LLM%20Quantization%20Methods,-Quantization%20reduces%20the&text=Common%20quantization%20approaches%20include%20Bitsnbytes,and%20potentially%20speeding%20up%20computation.)
+* [mlabonne/llm-course#quantization](https://github.com/mlabonne/llm-course?tab=readme-ov-file#7-quantization)
 ## 3) :blue_book: Use open source models
 Consider self-hosting models instead of using proprietary models if you have capable developers in house. Still, have an oversight of Total Cost of Ownership, when benchmarking managed LLMs vs. setting up everything on your own. 
 
@@ -65,7 +66,7 @@ Consider self-hosting models instead of using proprietary models if you have cap
 * [llama.cpp](https://github.com/ggerganov/llama.cpp)
 ### Blog posts & courses
 * [5x easy ways to run an llm locally](https://www.infoworld.com/article/3705035/5-easy-ways-to-run-an-llm-locally.html)
-* [Ollama - Deploy and run llms locally](https://blog.gopenai.com/ollama-deploy-and-run-llms-locally-d20e41dd9a2d)
+* [mlabonne/llm-course#deploying-llms](https://github.com/mlabonne/llm-course?tab=readme-ov-file#6-deploying-llms)
 ## 4) :blue_book: Reduce input/output tokens
 A key cost driver is the amount of input tokens (user prompt + context) and output tokens, that you allow for your LLM. Different techniques to reduce the amount of tokens help in saving costs.
 * Chunking of input documents
