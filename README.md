@@ -9,7 +9,7 @@
 </div>
 <br/>
 <p align="center">
-  <img src="images/Screenshot%202024-04-04%20at%2007.41.00.png" alt="Alt text" title="Expectation vs. Reality"> <br>
+  <img src="images/expectationvsreality.png" alt="Alt text" title="Expectation vs. Reality"> <br>
 </p>
 
 
@@ -24,7 +24,7 @@
 </p>
 
 ## 1) :blue_book: Choose model family and type 
-Selecting a suitable model or combination of models based on factors, such as speciality, size and benchmark results, builds the foundation for developing cost-sensible LLM applications.
+Selecting a suitable model or combination of models based on factors, such as speciality, size and benchmark results, builds the foundation for developing cost-sensible LLM applications. The aim is to choose a model that fits the complexity of the task. Same as you wouldn't take your BMW 8 Series M to a grocery store, you don't need to use a high-end LLM for simple tasks.
 
 ### Papers 
 * Naveed, Humza, et al. ["A comprehensive overview of large language models."](https://arxiv.org/abs/2307.06435?utm) arXiv preprint arXiv:2307.06435 (2023).
@@ -36,19 +36,21 @@ Selecting a suitable model or combination of models based on factors, such as sp
 * [Which LLM to choose for your use case?](https://ubiops.com/which-llm-to-choose-for-your-use-case/#:~:text=While%20choosing%20an%20LLM%20that,procedures%20and%20biases%2C%20and%20licensing.)
 * [6x Key factors to consider in choosing an LLM](https://www.solitontech.com/key-factors-to-consider-in-llm/)
 
-## 2) :blue_book: Reducing model size 
+## 2) :blue_book: Reduce model size 
 After chosing the suitable model family, you should consider models with fewer parameters and other techniques that reduce model size.
 * Model parameter size (i.e. 7B, 13B ... 175B)
-* Quantization of models
-* Higher degree of model customization (i.e. through RAG or fine-tuning) can achieve the same performance as a bigger model
-* Distillation 
+* Quantization (= reducing the precision of the model's parameters)
+* Pruning (= removing unnecessary weights, neurons, channels or layers)
+* Knowledge Distillation (= training smaller model that mimics a larger model)
 
 ### Papers 
-* :speaking_head: call-for-contributions :speaking_head:
+* Frantar and Alistarh ["SparseGPT: massive Language Models Can be Accurately Pruned in One-Shot"](https://arxiv.org/abs/2301.00774) arXiv preprint arXiv:2301.00774 (2023).
+* Hnton, Vinyals and Dean ["Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531) arXiv:1503.02531
 
 ### Tools & frameworks
+* [PyTorch Prune](https://pytorch.org/tutorials/intermediate/pruning_tutorial.html)
+* [PyTorch Quantization](https://pytorch.org/docs/stable/quantization.html)
 * [LoRA](https://huggingface.co/docs/diffusers/training/lora#lora) and [QLoRA](https://medium.com/@dillipprasad60/qlora-explained-a-deep-dive-into-parametric-efficient-fine-tuning-in-large-language-models-llms-c1a4794b1766) make training large models more efficient
-* :speaking_head: call-for-contributions :speaking_head:
 
 ### Blog posts & courses
 * [Basics of quantization in ML](https://iq.opengenus.org/basics-of-quantization-in-ml/)
