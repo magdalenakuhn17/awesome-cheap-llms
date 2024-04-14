@@ -24,7 +24,7 @@
 </p>
 
 ## 1) :blue_book: Choose model family and type 
-Selecting a suitable model or combination of models based on factors, such as speciality, size and benchmark results, builds the foundation for developing cost-sensible LLM applications.
+Selecting a suitable model or combination of models based on factors, such as speciality, size and benchmark results, builds the foundation for developing cost-sensible LLM applications. The aim is to choose a model that fits the complexity of the task. Same as you wouldn't take your BMW 8 Series M to a grocery store, you don't need to use a high-end LLM for simple tasks.
 
 ### Papers 
 * Naveed, Humza, et al. ["A comprehensive overview of large language models."](https://arxiv.org/abs/2307.06435?utm) arXiv preprint arXiv:2307.06435 (2023).
