@@ -75,6 +75,8 @@ A key cost driver is the amount of input tokens (user prompt + context) and outp
 * Compression of input tokens
 * Summarization of input tokens
 * Prompting to instruct the LLM how many output tokens are desired
+* Experiment with simple, concise prompts before adding verbose explanations and details
+* Test viability of zero-shot prompting before adding few-shot examples
 
 ### Papers  
 * :speaking_head: call-for-contributions :speaking_head: 
@@ -82,6 +84,7 @@ A key cost driver is the amount of input tokens (user prompt + context) and outp
 * [LLMLingua](https://github.com/microsoft/LLMLingua) by Microsoft to compress input prompts
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Blog posts & courses
+* [General Tips for Designing Prompts | Prompt Engineering Guide](https://www.promptingguide.ai/introduction/tips)
 * :speaking_head: call-for-contributions :speaking_head: 
 ## 5) :blue_book: Prompt and model routing 
 Send your incoming user prompts to a model router (= Python logic + SLM) to automatically choose a suitable model for actually answering the question. Follow Least-Model-Principle, which means to by default use the simplest possible logic or LM to answer a users question and only route to more complex LMs if necessary (aka. "LLM Cascading"). 
