@@ -75,8 +75,9 @@ A key cost driver is the amount of input tokens (user prompt + context) and outp
 * Compression of input tokens
 * Summarization of input tokens
 * Prompting to instruct the LLM how many output tokens are desired
-* Experiment with simple, concise prompts before adding verbose explanations and details
+* Instructing the LLM to be concise in the answer, adding no explanation text to the expected answer
 * Test viability of zero-shot prompting before adding few-shot examples
+* Experiment with simple, concise prompts before adding verbose explanations and details
 
 ### Papers  
 * :speaking_head: call-for-contributions :speaking_head: 
