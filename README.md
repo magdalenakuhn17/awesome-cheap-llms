@@ -70,14 +70,17 @@ Consider self-hosting models instead of using proprietary models if you have cap
 * [5x easy ways to run an llm locally](https://www.infoworld.com/article/3705035/5-easy-ways-to-run-an-llm-locally.html)
 * [mlabonne/llm-course#deploying-llms](https://github.com/mlabonne/llm-course?tab=readme-ov-file#6-deploying-llms)
 ## 4) :blue_book: Reduce input/output tokens
-A key cost driver is the amount of input tokens (user prompt + context) and output tokens, that you allow for your LLM. Different techniques to reduce the amount of tokens help in saving costs.
+A key cost driver is the amount of input tokens (user prompt + context) and output tokens, that you allow for your LLM. Different techniques to reduce the amount of tokens help in saving costs. <br>
+**Input tokens:**
 * Chunking of input documents
 * Compression of input tokens
-* Summarization of input tokens
-* Prompting to instruct the LLM how many output tokens are desired
-* Instructing the LLM to be concise in the answer, adding no explanation text to the expected answer
+* Summarization of input tokens 
 * Test viability of zero-shot prompting before adding few-shot examples
 * Experiment with simple, concise prompts before adding verbose explanations and details
+
+**Output tokens:**
+* Prompting to instruct the LLM how many output tokens are desired
+* Prompting to instruct the LLM to be concise in the answer, adding no explanation text to the expected answer
 
 ### Papers  
 * :speaking_head: call-for-contributions :speaking_head: 
