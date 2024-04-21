@@ -70,11 +70,17 @@ Consider self-hosting models instead of using proprietary models if you have cap
 * [5x easy ways to run an llm locally](https://www.infoworld.com/article/3705035/5-easy-ways-to-run-an-llm-locally.html)
 * [mlabonne/llm-course#deploying-llms](https://github.com/mlabonne/llm-course?tab=readme-ov-file#6-deploying-llms)
 ## 4) :blue_book: Reduce input/output tokens
-A key cost driver is the amount of input tokens (user prompt + context) and output tokens, that you allow for your LLM. Different techniques to reduce the amount of tokens help in saving costs.
+A key cost driver is the amount of input tokens (user prompt + context) and output tokens, that you allow for your LLM. Different techniques to reduce the amount of tokens help in saving costs. <br>
+**Input tokens:**
 * Chunking of input documents
 * Compression of input tokens
-* Summarization of input tokens
+* Summarization of input tokens 
+* Test viability of zero-shot prompting before adding few-shot examples
+* Experiment with simple, concise prompts before adding verbose explanations and details
+
+**Output tokens:**
 * Prompting to instruct the LLM how many output tokens are desired
+* Prompting to instruct the LLM to be concise in the answer, adding no explanation text to the expected answer
 
 ### Papers  
 * :speaking_head: call-for-contributions :speaking_head: 
@@ -82,6 +88,7 @@ A key cost driver is the amount of input tokens (user prompt + context) and outp
 * [LLMLingua](https://github.com/microsoft/LLMLingua) by Microsoft to compress input prompts
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Blog posts & courses
+* [General Tips for Designing Prompts | Prompt Engineering Guide](https://www.promptingguide.ai/introduction/tips)
 * :speaking_head: call-for-contributions :speaking_head: 
 ## 5) :blue_book: Prompt and model routing 
 Send your incoming user prompts to a model router (= Python logic + SLM) to automatically choose a suitable model for actually answering the question. Follow Least-Model-Principle, which means to by default use the simplest possible logic or LM to answer a users question and only route to more complex LMs if necessary (aka. "LLM Cascading"). 
