@@ -116,10 +116,12 @@ Make sure one single customer is not able to penetrate your LLM and skyrocket yo
 ## 8) :blue_book: Cost tracking  
 "You can't improve what you don't measure" --> Make sure to know where your costs are coming from. Is it super active users? Is it a premium model? etc.
 ### Tools & frameworks 
-* Simple tracking and cost attribution logic can be implemented in native Python 
+* Simple tracking and cost attribution logic can be implemented in native Python
+* [Props AI](https://getprops.ai) - Effortless Cost Monitoring in 3 lines of code.
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Blog posts & courses
-* :speaking_head: call-for-contributions :speaking_head: 
+* [Props AI - Usage Based billing for AI companies](https://getprops.ai/blog/maximizing-profitability-for-ai-startups-the-advantages-of-usage-based)
+* :speaking_head: call-for-contributions :speaking_head:
 ## 9) :blue_book: During development time 
 * Make sure to not send endless API calls to your LLM during development and manual testing.
 * Make sure to not send automated API calls to your LLM via automated CICD workflows, integration tests etc. 
