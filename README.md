@@ -121,7 +121,9 @@ Make sure one single customer is not able to penetrate your LLM and skyrocket yo
 "You can't improve what you don't measure" --> Make sure to know where your costs are coming from. Is it super active users? Is it a premium model? etc.
 ### Tools & frameworks 
 * Simple tracking and cost attribution logic can be implemented in native Python 
-* :speaking_head: call-for-contributions :speaking_head: 
+* :speaking_head: call-for-contributions :speaking_head:
+* [Tokenr](https://tokenr.co) — LLM cost attribution
+  and FinOps for multi-agent systems
 ### Blog posts & courses
 * :speaking_head: call-for-contributions :speaking_head: 
 ## 9) :blue_book: During development time 
