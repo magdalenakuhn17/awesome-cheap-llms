@@ -113,7 +113,8 @@ If your users tend to send semantically similar or repetitive prompts to your LL
 ## 7) :blue_book: Rate limiting 
 Make sure one single customer is not able to penetrate your LLM and skyrocket your bill. Track amount of prompts per month per user and either hard limit to max amount of prompts or reduce response time when a user is hitting the limit. In addition, detect unnatural/sudden spikes in user requests (similar to DDOS attacks, users/competitors can harm your business by sending tons of requests to your model).
 ### Tools & frameworks 
-* Simple tracking and rate limiting logic can be implemented in native Python 
+* Simple tracking and rate limiting logic can be implemented in native Python
+* - [Bastion](https://github.com/jes-jwjh/Bastion) – Runtime protection layer for AI agents. Catches semantic loops via embedding similarity, retry storms, and enforces per-session budget caps that block only the broken session, not the whole account.
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Blog posts & courses 
 * [How to design a scalable rate limiting algorithm](https://konghq.com/blog/engineering/how-to-design-a-scalable-rate-limiting-algorithm) 
