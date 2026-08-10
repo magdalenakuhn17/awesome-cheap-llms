@@ -121,6 +121,7 @@ Make sure one single customer is not able to penetrate your LLM and skyrocket yo
 "You can't improve what you don't measure" --> Make sure to know where your costs are coming from. Is it super active users? Is it a premium model? etc.
 ### Tools & frameworks 
 * Simple tracking and cost attribution logic can be implemented in native Python 
+* [PromptSpend](https://promptspend.com/) – Pricing reference that tracks cost-model details other tools miss: cache writes billed at 1.25x, per-request long-context tiers, and reasoning tokens billed separately.
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Blog posts & courses
 * :speaking_head: call-for-contributions :speaking_head: 
