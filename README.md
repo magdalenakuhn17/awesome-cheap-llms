@@ -31,6 +31,7 @@ Selecting a suitable model or combination of models based on factors, such as sp
 ### Tools & frameworks
 * [MTEB (Massive Text Embedding Benchmark) Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) by Huggingface
 * [Models](https://huggingface.co/models) by Huggingface
+* [oss-migration-eval](https://github.com/BayramAnnakov/oss-migration-eval) – Claude Code skill that decides, with statistical rigor, whether a cheaper/open-weight model can replace an expensive one for a specific recurring task: builds a human-validated golden set, sweeps candidates 5 seeds each on provider-pinned OpenRouter endpoints, and reports cost savings vs. accuracy loss as a go/no-go verdict with error bars (never a single-sample "winner").
 ### Blog posts & courses
 * [Which LLM to choose for your use case?](https://ubiops.com/which-llm-to-choose-for-your-use-case/#:~:text=While%20choosing%20an%20LLM%20that,procedures%20and%20biases%2C%20and%20licensing.)
 * [6x Key factors to consider in choosing an LLM](https://www.solitontech.com/key-factors-to-consider-in-llm/)
