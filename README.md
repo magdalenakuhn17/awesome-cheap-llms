@@ -31,6 +31,7 @@ Selecting a suitable model or combination of models based on factors, such as sp
 ### Tools & frameworks
 * [MTEB (Massive Text Embedding Benchmark) Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) by Huggingface
 * [Models](https://huggingface.co/models) by Huggingface
+* [Compute Comparison](https://computecomparison.com/) - Live price comparison for LLM API pricing (40+ providers, 280+ models) and GPU cloud rentals.
 ### Blog posts & courses
 * [Which LLM to choose for your use case?](https://ubiops.com/which-llm-to-choose-for-your-use-case/#:~:text=While%20choosing%20an%20LLM%20that,procedures%20and%20biases%2C%20and%20licensing.)
 * [6x Key factors to consider in choosing an LLM](https://www.solitontech.com/key-factors-to-consider-in-llm/)
