@@ -120,6 +120,7 @@ Make sure one single customer is not able to penetrate your LLM and skyrocket yo
 ## 8) :blue_book: Cost tracking  
 "You can't improve what you don't measure" --> Make sure to know where your costs are coming from. Is it super active users? Is it a premium model? etc.
 ### Tools & frameworks 
+* [LLM Price Calc](https://llmpricecalc.com/) – Independent LLM pricing calculators and worked cost examples for comparing token prices, caching rates, and workload scenarios.
 * Simple tracking and cost attribution logic can be implemented in native Python 
 * :speaking_head: call-for-contributions :speaking_head: 
 ### Blog posts & courses
