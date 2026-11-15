@@ -93,6 +93,7 @@ A key cost driver is the amount of input tokens (user prompt + context) and outp
 * [ShortGPT](https://github.com/RayVentura/ShortGPT) – Experimental AI framework for automating short/video content creation via LLM‑driven scripts, voiceovers, captions, and token‑efficient prompting.
 ### Blog posts & courses
 * [General Tips for Designing Prompts | Prompt Engineering Guide](https://www.promptingguide.ai/introduction/tips)
+* [How often do AI API rates actually change?](https://aitokensai.com/benchmark/price-volatility-2026/) - A dated, CC-BY-4.0 study of observed LLM rate changes with the full event list as CSV/JSON and the method behind it.
 * :speaking_head: call-for-contributions :speaking_head: 
 ## 5) :blue_book: Prompt and model routing 
 Send your incoming user prompts to a model router (= Python logic + SLM) to automatically choose a suitable model for actually answering the question. Follow Least-Model-Principle, which means to by default use the simplest possible logic or LM to answer a users question and only route to more complex LMs if necessary (aka. "LLM Cascading"). 
